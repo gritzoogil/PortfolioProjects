@@ -1,6 +1,6 @@
-SELECT *
-FROM ProjectPortfolio..CovidDeaths
-ORDER BY 3, 4;
+--SELECT *
+--FROM ProjectPortfolio..CovidDeaths
+--ORDER BY 3, 4;
 
 --SELECT *
 --FROM ProjectPortfolio..CovidVaccination
