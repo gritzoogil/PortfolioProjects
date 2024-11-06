@@ -1,10 +1,9 @@
---SELECT *
---FROM ProjectPortfolio..CovidDeaths
---ORDER BY 3, 4;
+/*
+Covid 19 Data Exploration
 
---SELECT *
---FROM ProjectPortfolio..CovidVaccination
---ORDER BY 3, 4;
+Skills used: Joins, CTEs, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
+*/
 
 SELECT *
 FROM ProjectPortfolio..CovidDeaths
