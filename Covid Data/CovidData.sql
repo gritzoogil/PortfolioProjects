@@ -18,7 +18,7 @@ ORDER BY 1, 2;
 -- example: Philippines
 SELECT country, date, total_cases, total_deaths, (total_deaths/ NULLIF(total_cases, 0))*100 AS death_percentage
 FROM ProjectPortfolio..CovidDeaths
-WHERE country LIKE 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
+WHERE country = 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
 ORDER BY 1, 2;
 
 
@@ -26,7 +26,7 @@ ORDER BY 1, 2;
 -- example: Philppines
 SELECT country, date, population, total_cases, (total_cases / population)*100 AS case_percentage
 FROM ProjectPortfolio..CovidDeaths
-WHERE country LIKE 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
+WHERE country = 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
 ORDER BY 1, 2;
 
 
@@ -112,13 +112,13 @@ FROM #PopulationVaccinatedPercentage;
 CREATE VIEW CovidDyingPercentagePhilippines AS
 SELECT country, date, total_cases, total_deaths, (total_deaths/ NULLIF(total_cases, 0))*100 AS death_percentage
 FROM ProjectPortfolio..CovidDeaths
-WHERE country LIKE 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
+WHERE country = 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
 
 
 CREATE VIEW CovidInfectionPercentagePhilippines AS
 SELECT country, date, population, total_cases, (total_cases / population)*100 AS case_percentage
 FROM ProjectPortfolio..CovidDeaths
-WHERE country LIKE 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
+WHERE country = 'Philippines' AND code IS NOT NULL AND code NOT LIKE 'OWID%'
 
 
 CREATE VIEW CountryHighestInfectionRate AS
